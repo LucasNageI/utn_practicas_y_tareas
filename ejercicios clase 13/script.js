@@ -1,16 +1,7 @@
 /* ejercicio 1 */
 
-let tieneHijos = prompt("tiene hijos?")
-
-if (tieneHijos == "si", "SI", "Si") {
-    alert("tiene hijos")
-}
-else if (tieneHijos == "no", "NO", "No") {
-    alert("no tiene hijos")
-}
-else {
-    alert("error: dato no valido")
-}
+let tieneHijos = false
+alert (tieneHijos)
 
 /* ejercicio 2 */
 
