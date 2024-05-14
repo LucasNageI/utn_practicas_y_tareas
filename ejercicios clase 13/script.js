@@ -23,3 +23,23 @@ else if (edad <= 17) {
 else {
     console.log("error: dato no valido")
 }
+
+/* ejercicio opcional */
+
+let sueldo = prompt("ingrese su sueldo actual")
+let antiguedad = prompt("cuantos años lleva en la empresa?")
+
+if (sueldo <= 500 && antiguedad >= 10) {
+    sueldo = sueldo * 1.2
+    console.log("va a obtener un amuento del 20%, es decir: " + sueldo)
+}
+else if (sueldo <= 500 && antiguedad > 10) {
+    sueldo = sueldo * 1.05
+    console.log("va a obtener un amuento del 5%, es decir: " + sueldo)
+}
+else if (sueldo >= 500) {
+    console.log("su sueldo permanecera siendo " + sueldo)
+}
+else {
+    console.log("error: dato no valido")
+}
