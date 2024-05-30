@@ -1,30 +1,40 @@
 /* LOGIN */
 
-let email_ingresado = prompt("ingrese su email")
-
 function verificarEmail (email) {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)
+    return !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)
 }
-
-while (verificarEmail(email_ingresado) === false) {
-    email_ingresado = prompt("error, ingrese el email nuevamente")
-    verificarEmail(email_ingresado)
-}
-
-alert("email ingresado correctamente")
-
-let password_ingresada = prompt("ingrese una contraseña que contenga al menos 6 digitos y una mayuscula")
 
 function verificarPassword (password){
-    return password.toLowerCase() === password || String(password).length <= 6
+    return password.toLowerCase() === password || password.length <= 6
 }
 
-while (verificarPassword(password_ingresada) === true) {
-    password_ingresada = prompt("contraseña no valida, intente nusevamente")
-    verificarPassword(email_ingresado)
+function obtenerDatos (data) {
+    let dato = prompt(data.mensaje)
+    while(data.validacion(dato)){
+        dato = prompt(data.error)
+    }
+    return dato
 }
 
-alert("contraseña valida")
+const DATOS = {
+    EMAIL:{
+        mensaje: "ingrese su email",
+        error: "el email no es valido, intente nuevamente",
+        validacion: verificarEmail
+    },
+    PASSWORD:{
+        mensaje: "cree contraseña, debe tener por lo menos 6 caracteres y una mayuscula",
+        error: "la contraseña no es valida, intente nuevamente",
+        validacion: verificarPassword
+    }
+}
+
+const login = `
+    email: ${obtenerDatos(DATOS.EMAIL)}
+    password: ${obtenerDatos(DATOS.PASSWORD)}
+`
+
+console.log(login)
 
 /* CALCULADORA */
 
