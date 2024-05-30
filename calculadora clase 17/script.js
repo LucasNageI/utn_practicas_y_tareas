@@ -1,6 +1,6 @@
 /* LOGIN */
 
-let email_ingresado = prompt("ingrese su email")
+/* let email_ingresado = prompt("ingrese su email")
 
 function verificarEmail (email) {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)
@@ -20,15 +20,15 @@ function verificarPassword (password){
 }
 
 while (verificarPassword(password_ingresada) === true) {
-    password_ingresada = prompt("contraseña no valida, intente nuevamente")
+    password_ingresada = prompt("contraseña no valida, intente nusevamente")
     verificarPassword(email_ingresado)
 }
 
-alert("contraseña valida")
+alert("contraseña valida") */
 
 /* CALCULADORA */
 
-let operacion_ingresada = prompt("ingrese la operacion que desea realizar (+ o -)")
+/* let operacion_ingresada = prompt("ingrese la operacion que desea realizar (+ o -)")
 
 function verificarOperacion (operacion) {
     return operacion === "+" || operacion === "-"
@@ -61,22 +61,43 @@ if (operacion_ingresada === "+") {
 else{
     resultado_operacion = numero_a - numero_b
     alert("la resta de " + numero_a + " - " + numero_b + " es igual a " + resultado_operacion)
-}
+} */
 
 /* HISTORIAL */
 
 const historial = [
     {
         accion: 'CALCULAR',
-        operacion: operacion_ingresada,
-        a: numero_a,
-        b: numero_b,
-        resultado: resultado_operacion
+        operacion: "+",
+        a: 3,
+        b: 2,
+        resultado: 5
+    },
+    {
+        accion: 'CALCULAR',
+        operacion: "+",
+        a: 3,
+        b: 2,
+        resultado: 5
     }
 ]
 
-const mapeo_objetos = historial.map(function (historial){
-    return historial.accion + "\n" + historial.operacion + "\n" + historial.a + "\n" + historial.b + "\n" + historial.resultado
-})
+/* en esta funcion, estoy creando una variable donde se va a almacenar el historial como string, luego, uso un forof para que por cada item(objeto) del array, se muestre el valor de la accion, operacion, numero a, numero b y resultado. Para esto se usan los template strings, y la interpolacion de las keys de los objetos */
 
-console.log("el historial es:\n" + mapeo_objetos)
+function renderizarHistorial (historial) { 
+    let historial_en_string = ""
+    for (const objeto of historial) {
+        historial_en_string = historial_en_string + `
+        accion: ${objeto.accion}
+        operacion: ${objeto.operacion}
+        a: ${objeto.a}
+        b: ${objeto.b}
+        resultado: ${objeto.resultado}
+        `
+    }
+    return historial_en_string
+}
+
+/* esta es una funcion que convierte un array a string mediante el uso de template strings y interpolaciones */
+
+alert(renderizarHistorial(historial))
