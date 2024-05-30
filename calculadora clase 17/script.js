@@ -1,6 +1,6 @@
 /* LOGIN */
 
-/* let email_ingresado = prompt("ingrese su email")
+let email_ingresado = prompt("ingrese su email")
 
 function verificarEmail (email) {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email)
@@ -24,11 +24,11 @@ while (verificarPassword(password_ingresada) === true) {
     verificarPassword(email_ingresado)
 }
 
-alert("contraseña valida") */
+alert("contraseña valida")
 
 /* CALCULADORA */
 
-/* let operacion_ingresada = prompt("ingrese la operacion que desea realizar (+ o -)")
+let operacion_ingresada = prompt("ingrese la operacion que desea realizar (+ o -)")
 
 function verificarOperacion (operacion) {
     return operacion === "+" || operacion === "-"
@@ -61,7 +61,7 @@ if (operacion_ingresada === "+") {
 else{
     resultado_operacion = numero_a - numero_b
     alert("la resta de " + numero_a + " - " + numero_b + " es igual a " + resultado_operacion)
-} */
+}
 
 /* HISTORIAL */
 
