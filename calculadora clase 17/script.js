@@ -75,26 +75,25 @@ else{
 
 /* HISTORIAL */
 
-const historial = [
-    {
-        accion: 'CALCULAR',
-        operacion: "+",
-        a: 3,
-        b: 2,
-        resultado: 5
-    },
-    {
-        accion: 'CALCULAR',
-        operacion: "+",
-        a: 3,
-        b: 2,
-        resultado: 5
-    }
-]
+const historial = []
+
+const ultima_accion = {
+    operacion: operacion_ingresada,
+    a: numero_a,
+    b: numero_b,
+    resultado: resultado_operacion
+}
+
+function agregarAlHistorial (elementoHistorial) {
+    historial.push(JSON.stringify(elementoHistorial))
+    localStorage.setItem("historial: ", historial)
+}
+
+console.log(agregarAlHistorial(ultima_accion))
 
 /* en esta funcion, estoy creando una variable donde se va a almacenar el historial como string, luego, uso un forof para que por cada item(objeto) del array, se muestre el valor de la accion, operacion, numero a, numero b y resultado. Para esto se usan los template strings, y la interpolacion de las keys de los objetos */
 
-function renderizarHistorial (historial) { 
+/* function renderizarHistorial (historial) { 
     let historial_en_string = ""
     for (const objeto of historial) {
         historial_en_string = historial_en_string + `
@@ -106,8 +105,17 @@ function renderizarHistorial (historial) {
         `
     }
     return historial_en_string
-}
+} */
+
+const historial_en_string = JSON.stringify(historial)
 
 /* esta es una funcion que convierte un array a string mediante el uso de template strings y interpolaciones */
 
-alert(renderizarHistorial(historial))
+alert(historial_en_string)
+
+function obtenerHIstorial () {
+    let historial_desde_localStorage = localStorage.getItem("historial")
+    return JSON.stringify([historial_desde_localStorage])
+}
+
+console.log(obtenerHIstorial())
