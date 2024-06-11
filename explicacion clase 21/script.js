@@ -31,7 +31,7 @@ const obtenerValoresFormulario = (formulario) => { /* se crea una funcion a la q
         const spanErrorHTML = formulario.querySelector('.error-text-' + input) /* se crea una constante "spanErrorHTML", que usa el parametro para acceder al hmtl, mediante query selector selecciona un spam que tiene la clase error-text, y le suma el valor del input, que equivale a un elemento del array */
         const valor = formulario[input].value /* se crea una constante que toma el valor de formulario, y accede al valor del elemento que se esta iterando */
         inputsInfo[input] = { /* al objeto vacio, se le agregan estos datos */
-            errorHTML: spanErrorHTML, /* el mensaje de error que va a ser mostrado por el span */
+            errorHTML: spanErrorHTML, /* span del input */
             validacion: VALIDACIONES[input].validacion, /* la validacion */
             errorText: VALIDACIONES[input].errorText, /* el mensaje de error */
             valor: valor /* el valor del elemento */
