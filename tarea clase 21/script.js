@@ -33,12 +33,17 @@ const VALIDACIONES = { /* creo un diccionario con 5 propiedades que se le asigna
     }
 }
 
-const obtenerProductos = (formulario) => { /* creo una funcion que toma como parametro un formulario */
+function obtenerProductos (formulario) { /* creo una funcion que toma como parametro un formulario */
+
     const propiedades_productos = ["titulo", "precio", "descripcion", "stock", "codigo"] /* creo un array que tenga el mismo nombre de las propiedades del diccionario */
     const valores_productos = {} /* creo un objeto vacio */
+
     for (const propiedad of propiedades_productos) { /* hago un bucle forof, que itera cada elemento en el array "propiedades_productos" */
+
         const span_error_hmtl = formulario.querySelector(".error-text-" + propiedad) /* creo una constante donde llamo a la etiqueta HTML que tenga la clase error-text- y le sumo el valor de la propiedad, para identificarla */
+
         const propiedad_producto = formulario[propiedad].value /* creo una constante que guarda el valor de la propiedad del formulario */
+
         valores_productos[propiedad] = { /* le agrego al objeto vacio estas propiedades */
             error_html: span_error_hmtl, /* la etiqueta span donde se va a mostrar el error */
             validacion: VALIDACIONES[propiedad].validacion, /* la validacion de la propuedad */
@@ -49,13 +54,19 @@ const obtenerProductos = (formulario) => { /* creo una funcion que toma como par
     return valores_productos /* retorno el objeto */
 }
 
-const handleProducto = (event) => { /* creo el handle de mi formulario */
+function handleProducto (event) { /* creo el handle de mi formulario */
+
     event.preventDefault() /* prevengo su comportamiento por default */
+
     const datos_producto = event.target /* guardo en una constante el target del evento, es decir, el formulario enviado */
     const valores_productos = obtenerProductos(datos_producto) /* guardo en otra constante el retorno de la funcion obtenerProductos(), es decir, el objeto */
+
     console.log(valores_productos) /* muestro en consola el objeto */
+
     for (const propiedad_del_producto in valores_productos) { /* creo un forin que recorre cada propiedad del objeto */
+
         const objeto_valores_productos = valores_productos[propiedad_del_producto] /* creo una constante que guarda la propiedad del objeto que se esta iterando */
+
         if(!objeto_valores_productos.validacion(objeto_valores_productos.valor)){ /* si la funcion validacion de la propiedad del objeto devuelve true */
             objeto_valores_productos.error_html.innerText = objeto_valores_productos.error_text /* hago un innerText en el span que guarde anteriormente, y le inserto el texto de error */
         }
