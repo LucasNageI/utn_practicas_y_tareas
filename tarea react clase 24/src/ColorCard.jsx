@@ -9,30 +9,40 @@ function ColorCard({carta}) {
   return ( 
     <div className="card-container">
         <div className="colores-container">
-            <div style={{
+            <div style={
+                {
                 backgroundColor: colores[0],
                 height: "40%",
                 width: "100%"
-                }}></div>
+                }
+                }></div>
 
-            <div style={{
+            <div style={
+                {
                 backgroundColor: colores[1],
                 height: "30%",
                 width: "100%"
-                }}></div>
+                }
+                }></div>
 
-            <div style={{
+            <div style={
+                {
                 backgroundColor: colores[2],
                 height: "18%",
                 width: "100%"
-                }}></div>
+                }
+                }></div>
 
-            <div style={{
+            <div style={
+                {
                 backgroundColor: colores[3],
                 height: "12%",
                 width: "100%"
-                }}></div>
+                }
+                }></div>
         </div>
+
+        {/* los estilos en linea de react se escriben como si fueran objetos */}
 
         <div className="likes-hora">
             <button className="btn"><i className="bi bi-heart"></i>{likes}</button>
