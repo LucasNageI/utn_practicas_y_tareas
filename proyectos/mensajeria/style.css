@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #548380;
+    display: flex;
+    justify-content: center;
+}

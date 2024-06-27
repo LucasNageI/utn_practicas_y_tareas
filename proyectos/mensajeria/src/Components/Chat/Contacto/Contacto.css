@@ -1,0 +1,18 @@
+.header-contacto {
+    width: 100%;
+
+}
+
+.header-contacto .contact-container {
+    background-color: #095f56;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.header-contacto .contact-container .foto-de-perfil {
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-right: 10px;
+}

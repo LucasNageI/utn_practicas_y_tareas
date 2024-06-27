@@ -1,5 +1,5 @@
 import React from "react"
-import {ListaMensajes, Contacto, NuevoMensaje} from "/home/lucas/Desktop/Practicas UTN/mensajeria/src/Components/Chat"
+import {ListaMensajes, Contacto, NuevoMensaje} from "/home/lucas/Desktop/Practicas UTN/proyectos/mensajeria/src/Components/Chat"
 import "./ChatScreen.css"
 
 export const ChatScreen = () => {
@@ -32,9 +32,9 @@ export const ChatScreen = () => {
     ]
 
   return (
-    <div>
+    <div className="main-container">
         <Contacto />
-        <ListaMensajes /> {/* hace el map */}
+        <ListaMensajes mensaje={MOOK_MENSAJES} /> {/* hace el map */}
         <NuevoMensaje />
     </div>
   )

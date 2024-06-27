@@ -1,0 +1,11 @@
+.main-container {
+    overflow: hidden;
+    display: flex;
+    background-color: #dedbd6;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 400px;
+    height: 800px;
+}
