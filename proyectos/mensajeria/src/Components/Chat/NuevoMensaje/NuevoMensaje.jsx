@@ -3,6 +3,8 @@ import "./NuevoMensaje.css"
 
 export const NuevoMensaje = () => {
   return (
-    <div>NuevoMensaje</div>
+    <div className="input-container">
+        <input className="input-mensaje" type="text" />
+    </div>
   )
 }

@@ -1,0 +1,22 @@
+.input-container {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container .input-mensaje {
+    font-size: 1rem;
+    width: 90%;
+    height: 50%;
+    border: none;
+    border-radius: 20px;
+    background-color: #28373c;
+    color: white;
+    padding: 10px;
+}
+
+.input-container .input-mensaje:focus {
+    outline: none;
+    background-color: #28373c;
+}

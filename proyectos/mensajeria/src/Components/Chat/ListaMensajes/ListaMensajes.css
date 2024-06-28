@@ -1,0 +1,33 @@
+.mensaje-container {
+    background-color: #202c38;
+    width: 75%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.estado-day-hour-container {
+    display: flex;
+    justify-content: end;
+}
+
+.author {
+    color: rgb(156, 52, 52);
+}
+
+.text {
+    color: white;
+}
+
+.estado {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.day{
+    color: rgba(255, 255, 255, 0.5);
+}
+.hour {
+    color: rgba(255, 255, 255, 0.5);
+}

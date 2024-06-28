@@ -1,11 +1,24 @@
 .main-container {
     overflow: hidden;
     display: flex;
-    background-color: #dedbd6;
+    background-color: #111d29;
     flex-direction: column;
-    justify-content: space-between;
     border: 2px solid black;
     border-radius: 20px;
     width: 400px;
     height: 800px;
+}
+
+.contact-container {
+    height: 10%;
+}
+
+.mensajes-container {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: 10px;
+    align-items: start;
+    scrollbar-width: none;
 }
