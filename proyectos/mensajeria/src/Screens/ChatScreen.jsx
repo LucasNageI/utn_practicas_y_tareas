@@ -14,7 +14,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -38,7 +38,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -62,7 +62,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -86,7 +86,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -110,7 +110,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -134,7 +134,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'pepe',
+            author: 'minion',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',

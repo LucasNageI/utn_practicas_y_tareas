@@ -1,7 +1,17 @@
-.mensaje-container {
+.mensaje-propio-container {
     background-color: #202c38;
     width: 75%;
-    margin-left: 20px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.mensaje-externo-container {
+    background-color: #202c38;
+    width: 75%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -13,8 +23,12 @@
     justify-content: end;
 }
 
-.author {
+.otro {
     color: rgb(156, 52, 52);
+}
+
+.yo {
+    color: rgba(149, 92, 255, 0.5);
 }
 
 .text {
