@@ -1,7 +1,7 @@
 import React from "react"
 import "./ListaMensajes.css"
 
-export const ListaMensajes = ({mensaje}) => { /* aca va el .map() */
+export const ListaMensajes = ({mensaje}) => {
 
             const array_de_mensajes = mensaje.map((mensaje) => {
                 if(mensaje.author != "yo"){
