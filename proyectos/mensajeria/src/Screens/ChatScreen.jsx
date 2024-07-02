@@ -35,7 +35,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:15',
-            id: '1'
+            id: '4'
         },
         {
             author: 'minion',
@@ -43,7 +43,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:16',
-            id: '2'
+            id: '5'
         },
         {
             author: 'yo',
@@ -51,7 +51,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:17',
-            id: '3'
+            id: '6'
         },
                 {
             author: 'yo',
@@ -59,7 +59,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:15',
-            id: '1'
+            id: '7'
         },
         {
             author: 'minion',
@@ -67,7 +67,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:16',
-            id: '2'
+            id: '8'
         },
         {
             author: 'yo',
@@ -75,7 +75,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:17',
-            id: '3'
+            id: '9'
         },
         {
             author: 'yo',
@@ -83,7 +83,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:15',
-            id: '1'
+            id: '10'
         },
         {
             author: 'minion',
@@ -91,7 +91,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:16',
-            id: '2'
+            id: '11'
         },
         {
             author: 'yo',
@@ -99,7 +99,7 @@ export const ChatScreen = () => {
             estado: 'visto',
             day: 'hoy',
             hour: '13:17',
-            id: '3'
+            id: '12'
         },
     ]
 
