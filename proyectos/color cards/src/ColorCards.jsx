@@ -2,7 +2,7 @@ import React from "react"
 
 /* props = {tarjeta: {objeto tarjeta}} */
 export const ColorCard = ({ tarjeta }) => {
-    const { likes, fecha, colores } = tarjeta
+    const { id, likes, fecha, colores } = tarjeta
     return (
         <div className="color-card">
             <div className="colors">
