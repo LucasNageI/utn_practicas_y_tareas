@@ -14,7 +14,7 @@ export const ChatScreen = () => {
             id: '1'
         },
         {
-            author: 'minion',
+            author: 'eliana',
             text: 'Hola que tal?',
             estado: 'visto',
             day: 'hoy',
@@ -30,6 +30,30 @@ export const ChatScreen = () => {
             id: '3'
         },
         {
+            author: 'yo',
+            text: 'texto de mensaje',
+            estado: 'visto',
+            day: 'hoy',
+            hour: '13:15',
+            id: '1'
+        },
+        {
+            author: 'minion',
+            text: 'Hola que tal?',
+            estado: 'visto',
+            day: 'hoy',
+            hour: '13:16',
+            id: '2'
+        },
+        {
+            author: 'yo',
+            text: 'Sos real? OMG',
+            estado: 'visto',
+            day: 'hoy',
+            hour: '13:17',
+            id: '3'
+        },
+                {
             author: 'yo',
             text: 'texto de mensaje',
             estado: 'visto',
@@ -71,84 +95,12 @@ export const ChatScreen = () => {
         },
         {
             author: 'yo',
-            text: 'Sos real? OMG',
+            text: 'OK',
             estado: 'visto',
             day: 'hoy',
             hour: '13:17',
             id: '3'
         },
-        {
-            author: 'yo',
-            text: 'texto de mensaje',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:15',
-            id: '1'
-        },
-        {
-            author: 'minion',
-            text: 'Hola que tal?',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:16',
-            id: '2'
-        },
-        {
-            author: 'yo',
-            text: 'Sos real? OMG',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:17',
-            id: '3'
-        },
-        {
-            author: 'yo',
-            text: 'texto de mensaje',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:15',
-            id: '1'
-        },
-        {
-            author: 'minion',
-            text: 'Hola que tal?',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:16',
-            id: '2'
-        },
-        {
-            author: 'yo',
-            text: 'Sos real? OMG',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:17',
-            id: '3'
-        },
-        {
-            author: 'yo',
-            text: 'texto de mensaje',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:15',
-            id: '1'
-        },
-        {
-            author: 'minion',
-            text: 'Hola que tal?',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:16',
-            id: '2'
-        },
-        {
-            author: 'yo',
-            text: 'Sos real? OMG',
-            estado: 'visto',
-            day: 'hoy',
-            hour: '13:17',
-            id: '3'
-        }
     ]
 
   return (
