@@ -1,10 +1,12 @@
 import React from "react"
 import "./NuevoMensaje.css"
 import { useState } from "react"
+import { MOOK_MENSAJES } from "../mookMensajes"
+import { ListaMensajes } from "../ListaMensajes/ListaMensajes"
 
-export const NuevoMensaje = ({mensajes_actuales}) => {
+export const NuevoMensaje = () => {
 
-    const [mensajes, setMensaje] = useState(mensajes_actuales)
+    const [mensajes, setMensaje] = useState(MOOK_MENSAJES)
 
     const handleSubmit = (e) => {
         e.preventDefault()   
@@ -16,21 +18,21 @@ export const NuevoMensaje = ({mensajes_actuales}) => {
                 estado: 'recibido',
                 day: 'hoy',
                 hour: '14:21',
-                id: (mensajes.length + 1)
+                id: mensajes.lenght + 1
             }
 
         setMensaje([...mensajes, new_mensaje])
         console.log(mensajes)
-            e.target[`text`]. value = ""
-        }
+        e.target[`text`]. value = "" 
     }
-
+}
   return (
-        <>
-            <form onSubmit={handleSubmit} className="form-container">
-                <input className="input-mensaje" name="text" id="text" type="text" />
-                <button className="enviar" type="submit"><i className="bi bi-send"></i></button>
-            </form>
-        </>
+    <>
+        <form onSubmit={handleSubmit} className="form-container">
+            <input className="input-mensaje" name="text" id="text" type="text" />
+            <button className="enviar" type="submit"><i className="bi bi-send"></i></button>
+        </form>
+    </>
   )
+
 }

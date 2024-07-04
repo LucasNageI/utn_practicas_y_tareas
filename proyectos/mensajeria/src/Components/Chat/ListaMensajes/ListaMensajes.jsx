@@ -1,7 +1,11 @@
 import React from "react"
 import "./ListaMensajes.css"
+import { useState } from "react"
+import { MOOK_MENSAJES } from "../mookMensajes"
 
 export const ListaMensajes = ({mensaje}) => {
+    const [nuevo_mensaje, setNuevoMensaje] = useState(mensaje)
+
 
             const array_de_mensajes = mensaje.map((mensaje) => {
                 if(mensaje.author != "yo"){
@@ -35,6 +39,7 @@ export const ListaMensajes = ({mensaje}) => {
                     )
                 }
             } 
+            
         )
     return array_de_mensajes
 
