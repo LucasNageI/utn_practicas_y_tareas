@@ -31,21 +31,20 @@ const colors_card_info = [
 
 const App = () => {
 
-    const [colors, setColorCardInfo] = useState()
-
+    const [colors_state, setColorCardInfo] = useState(colors_card_info)
     const handleSubmit = (e) => {
-
         e.preventDefault()
 
         const new_color_card = {
+            id: colors_state.length + 1,
             likes: 0,            
             fecha: e.target.value,
             colores: [],
         }
         for(let i = 1; i <= 4; i++){
-            new_color_card.colores.push(e.target["color-" + i].value)
+            new_color_card.colores.push(e.target[`color-${i}`].value)
         }
-        setColorCardInfo([...colors_card_info, new_color_card])
+        setColorCardInfo([...colors_state, new_color_card])
     }
 
     return (
