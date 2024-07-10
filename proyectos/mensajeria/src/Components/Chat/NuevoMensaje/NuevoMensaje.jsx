@@ -1,29 +1,16 @@
 import React from "react"
 import "./NuevoMensaje.css"
-import { useState } from "react"
-import { MOOK_MENSAJES } from "../mookMensajes"
-import { ListaMensajes } from "../ListaMensajes/ListaMensajes"
 
-export const NuevoMensaje = () => {
-
-    const [mensajes, setMensaje] = useState(MOOK_MENSAJES)
+export const NuevoMensaje = ({agregarNuevoMensaje}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()   
 
-        if(e.target[`text`].value != ""){
-            const new_mensaje = {
-                author: 'yo',
-                text: e.target[`text`].value,
-                estado: 'recibido',
-                day: 'hoy',
-                hour: '14:21',
-                id: mensajes.lenght + 1
-            }
+        let mensajeNuevo = e.target["text"].value
 
-        setMensaje([...mensajes, new_mensaje])
-        console.log(mensajes)
-        e.target[`text`]. value = "" 
+        if(mensajeNuevo != ""){
+            agregarNuevoMensaje(mensajeNuevo)
+            e.target["text"].value = ""
     }
 }
   return (

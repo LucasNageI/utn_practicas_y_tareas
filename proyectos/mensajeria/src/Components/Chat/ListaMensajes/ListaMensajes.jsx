@@ -1,11 +1,9 @@
 import React from "react"
 import "./ListaMensajes.css"
-import { useState } from "react"
-import { MOOK_MENSAJES } from "../mookMensajes"
 
 export const ListaMensajes = ({mensaje}) => {
-    const [nuevo_mensaje, setNuevoMensaje] = useState(mensaje)
 
+    console.log(mensaje)
 
             const array_de_mensajes = mensaje.map((mensaje) => {
                 if(mensaje.author != "yo"){
@@ -25,7 +23,7 @@ export const ListaMensajes = ({mensaje}) => {
                 }
                 else{
                     return(
-                        <div className="mensaje-propio-container" key={mensaje.id}>
+                    <div className="mensaje-propio-container" key={mensaje.id}>
                         <div className="author-texto-container">
                             <span className="yo">{mensaje.author}</span>
                             <p className="text">{mensaje.text}</p>
