@@ -1,7 +1,7 @@
 import React from "react"
 import {ListaMensajes, Contacto, NuevoMensaje} from "/home/lucas/Desktop/Practicas UTN/proyectos/mensajeria/src/Components/Chat"
 import "./ChatScreen.css"
-import { MOOK_MENSAJES } from "../Components/Chat/mookMensajes"
+import { MOOK_MENSAJES } from "../../Components/Chat/mookMensajes"
 import { useState } from "react"
 
 export const ChatScreen = () => {

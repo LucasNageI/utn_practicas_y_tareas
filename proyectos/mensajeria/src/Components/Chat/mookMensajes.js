@@ -1,15 +1,15 @@
 export const MOOK_MENSAJES = [
     {
         author: 'yo',
-        text: 'texto de mensaje',
+        text: 'che bana',
         estado: 'visto',
         day: 'hoy',
         hour: '13:15',
         id: '1'
     },
     {
-        author: 'eliana',
-        text: 'Hola que tal?',
+        author: 'el pela ',
+        text: 'que pasa?',
         estado: 'visto',
         day: 'hoy',
         hour: '13:16',
@@ -17,10 +17,18 @@ export const MOOK_MENSAJES = [
     },
     {
         author: 'yo',
-        text: 'Sos real? OMG',
+        text: 'la abundancia es lo mismo que la insuficiencia',
         estado: 'visto',
         day: 'hoy',
         hour: '13:17',
         id: '3'
+    },
+    {
+        author: 'el pela ',
+        text: 'QueEeEeEeEeeeeeeeeeeeeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeeeeee',
+        estado: 'visto',
+        day: 'hoy',
+        hour: '13:16',
+        id: '4'
     }
 ]
