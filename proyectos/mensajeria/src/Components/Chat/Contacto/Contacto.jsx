@@ -1,13 +1,14 @@
 import React from "react"
 import "./Contacto.css"
 import { MOOK_MENSAJES } from "../mookMensajes"
+import { Link } from "react-router-dom"
 
 export const Contacto = () => {
   return (
     <header className="header-contacto">
         <div className="contact-container">
-            <button className="back-btn"><i class="icon bi bi-arrow-left-short"></i></button>
-            <img className="foto-de-perfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwux2cnhItp4x1syD11EEmrjXx_fEVThndA&s" alt="foto-de-perfil" />
+            <Link to={'/Contactos'} className="back-btn"><i class="icon bi bi-arrow-left-short"></i></Link>
+            <img className="foto-de-perfil" src="https://media.0221.com.ar/adjuntos/357/migration/0221/032019/1553553111207.jpg" alt="foto-de-perfil" />
             <span className="nombre-contacto">{MOOK_MENSAJES[1].author}</span>
         </div>
     </header>

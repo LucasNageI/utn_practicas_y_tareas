@@ -6,7 +6,7 @@ import { ListaContactosScreen } from './Screens/ListaContactos/ListaContactosScr
     const App = () => {
         return (
             <Routes>
-                <Route element={<ListaContactosScreen/>} path='/'/>
+                <Route element={<ListaContactosScreen/>} path='/Contactos'/>
                 <Route element={<ChatScreen/>} path='/ChatScreen'/>
             </Routes>
         )

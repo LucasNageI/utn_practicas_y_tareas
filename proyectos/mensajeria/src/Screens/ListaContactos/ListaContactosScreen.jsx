@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const ListaContactosScreen = () => {
   return (
     <>
-    <h1>LISTA CONTACTOS</h1>
+    <Link to={'/ChatScreen'}>Chat</Link>
     </>
   )
 }

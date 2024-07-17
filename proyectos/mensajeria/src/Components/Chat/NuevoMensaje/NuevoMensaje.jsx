@@ -15,7 +15,7 @@ export const NuevoMensaje = ({agregarNuevoMensaje}) => {
 }
   return (
     <>
-        <form onSubmit={handleSubmit} className="form-container">
+        <form onSubmit={handleSubmit} autoComplete="off" className="form-container">
             <input className="input-mensaje" name="text" id="text" type="text" />
             <button className="enviar" type="submit"><i className="bi bi-send"></i></button>
         </form>
