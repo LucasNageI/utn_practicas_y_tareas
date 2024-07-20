@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './Screens/Home'
 
-function App() {
 
+function App() {
   return (
     <Routes>
         <Route element={<Home/>} path='/'></Route>
