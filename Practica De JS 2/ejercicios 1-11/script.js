@@ -101,4 +101,3 @@ const calcular = (operacion, numeros) => {
 }
 
 calcular(operacion, numeros)
-
